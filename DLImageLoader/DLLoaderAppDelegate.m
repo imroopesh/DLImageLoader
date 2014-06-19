@@ -2,10 +2,6 @@
 //  DLLoaderAppDelegate.m
 //  DLImageLoader
 //
-//  Created by Roopesh Manjunatha on 6/17/14.
-//  Copyright (c) 2014 Home. All rights reserved.
-//
-
 #import "DLLoaderAppDelegate.h"
 
 @implementation DLLoaderAppDelegate
@@ -14,6 +10,8 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    UIViewController *view = [[UIViewController alloc] init];
+    [self.window setRootViewController:view];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
