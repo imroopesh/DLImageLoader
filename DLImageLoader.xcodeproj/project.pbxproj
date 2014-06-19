@@ -19,6 +19,8 @@
 		1E75D42E1951115200D29450 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E75D4161951115200D29450 /* UIKit.framework */; };
 		1E75D4361951115200D29450 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1E75D4341951115200D29450 /* InfoPlist.strings */; };
 		1E75D4381951115200D29450 /* DLImageLoaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E75D4371951115200D29450 /* DLImageLoaderTests.m */; };
+		1E75D4551951156700D29450 /* DLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E75D4541951156700D29450 /* DLLogger.m */; };
+		1E75D465195233B400D29450 /* Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E75D464195233B400D29450 /* Log.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,11 @@
 		1E75D4331951115200D29450 /* DLImageLoaderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DLImageLoaderTests-Info.plist"; sourceTree = "<group>"; };
 		1E75D4351951115200D29450 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1E75D4371951115200D29450 /* DLImageLoaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLImageLoaderTests.m; sourceTree = "<group>"; };
+		1E75D4531951156700D29450 /* DLLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLLogger.h; sourceTree = "<group>"; };
+		1E75D4541951156700D29450 /* DLLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLLogger.m; sourceTree = "<group>"; };
+		1E75D463195233B400D29450 /* Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Log.h; sourceTree = "<group>"; };
+		1E75D464195233B400D29450 /* Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Log.m; sourceTree = "<group>"; };
+		1E75D46619525AEA00D29450 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +103,7 @@
 		1E75D4111951115200D29450 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1E75D46619525AEA00D29450 /* Social.framework */,
 				1E75D4121951115200D29450 /* Foundation.framework */,
 				1E75D4141951115200D29450 /* CoreGraphics.framework */,
 				1E75D4161951115200D29450 /* UIKit.framework */,
@@ -107,6 +115,7 @@
 		1E75D4181951115200D29450 /* DLImageLoader */ = {
 			isa = PBXGroup;
 			children = (
+				1E75D456195115E900D29450 /* SDK */,
 				1E75D4211951115200D29450 /* DLLoaderAppDelegate.h */,
 				1E75D4221951115200D29450 /* DLLoaderAppDelegate.m */,
 				1E75D4241951115200D29450 /* Images.xcassets */,
@@ -142,6 +151,17 @@
 				1E75D4341951115200D29450 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1E75D456195115E900D29450 /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				1E75D4531951156700D29450 /* DLLogger.h */,
+				1E75D4541951156700D29450 /* DLLogger.m */,
+				1E75D463195233B400D29450 /* Log.h */,
+				1E75D464195233B400D29450 /* Log.m */,
+			);
+			name = SDK;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,7 +260,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E75D4551951156700D29450 /* DLLogger.m in Sources */,
 				1E75D41F1951115200D29450 /* main.m in Sources */,
+				1E75D465195233B400D29450 /* Log.m in Sources */,
 				1E75D4231951115200D29450 /* DLLoaderAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,6 +460,7 @@
 				1E75D43D1951115200D29450 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1E75D43E1951115200D29450 /* Build configuration list for PBXNativeTarget "DLImageLoaderTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +469,7 @@
 				1E75D4401951115200D29450 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
