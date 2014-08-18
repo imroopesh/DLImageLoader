@@ -5,9 +5,9 @@
 
 #import "Log.h"
 
-#define kEncodeKeyStringValue   @"kEncodeKeyStringValue"
-#define kEncodeKeyIntValue      @"kEncodeKeyIntValue"
-#define kEncodeKeyBOOLValue     @"kEncodeKeyBOOLValue"
+#define kEncodeKeyDLName        @"kEncodeKeyDLName"
+#define kEncodeKeyBaseAddress   @"kEncodeKeyBaseAddress"
+#define kEncodeKeyLogType       @"kEncodeKeyLogType"
 
 @implementation Log
 
@@ -18,17 +18,17 @@
 #pragma Encoding
 
 - (void)encodeWithCoder:(NSCoder *)aCoder {
-    [aCoder encodeObject:self.dlName forKey:kEncodeKeyStringValue];
-    [aCoder encodeInt32:self.baseAddress forKey:kEncodeKeyIntValue];
-    [aCoder encodeBool:self.logType forKey:kEncodeKeyBOOLValue];
+    [aCoder encodeObject:self.dlName forKey:kEncodeKeyDLName];
+    [aCoder encodeInt32:self.baseAddress forKey:kEncodeKeyBaseAddress];
+    [aCoder encodeBool:self.logType forKey:kEncodeKeyLogType];
 
 }
 
 - (id)initWithCoder:(NSCoder *)aDecoder {
     if (self = [super init]) {
-        self.dlName = [aDecoder decodeObjectForKey:kEncodeKeyStringValue];
-        self.baseAddress = [aDecoder decodeInt32ForKey:kEncodeKeyIntValue];
-        self.logType = [aDecoder decodeBoolForKey:kEncodeKeyBOOLValue];
+        self.dlName = [aDecoder decodeObjectForKey:kEncodeKeyDLName];
+        self.baseAddress = [aDecoder decodeInt32ForKey:kEncodeKeyBaseAddress];
+        self.logType = [aDecoder decodeBoolForKey:kEncodeKeyLogType];
     }
     return self;
 }

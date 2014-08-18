@@ -54,7 +54,6 @@
 		1E75D4541951156700D29450 /* DLLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLLogger.m; sourceTree = "<group>"; };
 		1E75D463195233B400D29450 /* Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Log.h; sourceTree = "<group>"; };
 		1E75D464195233B400D29450 /* Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Log.m; sourceTree = "<group>"; };
-		1E75D46619525AEA00D29450 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +102,6 @@
 		1E75D4111951115200D29450 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1E75D46619525AEA00D29450 /* Social.framework */,
 				1E75D4121951115200D29450 /* Foundation.framework */,
 				1E75D4141951115200D29450 /* CoreGraphics.framework */,
 				1E75D4161951115200D29450 /* UIKit.framework */,
